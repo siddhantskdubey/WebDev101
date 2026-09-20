@@ -1,0 +1,325 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes</title>
+
+    <style>
+        body{
+            background-color: rgb(220, 144, 144);
+        }
+        .box {
+            background-color: lightseagreen;
+            padding: 20px;
+        }
+
+        span {
+            color: red;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Headings -->
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <!-- Till H6 -->
+
+    <hr>
+
+    <!-- This is a comment -->
+    <!-- <br> is used to create a line break -->
+
+    <br>
+
+    <!-- Lorem is used to generate random/sample text -->
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Ratione soluta dolorem, voluptas consequatur itaque quisquam
+        numquam nisi quibusdam quas iste eveniet velit incidunt id ex
+        officiis ullam, modi hic possimus.
+    </p>
+
+    <hr>
+
+    <!-- Hyperlinks -->
+
+    <a href="https://www.google.com/" target="_blank" title="Go to Google">
+        Click me
+    </a>
+
+    <br>
+
+    <a href="https://www.youtube.com/" target="_self" title="Go to YouTube">
+        Click me
+    </a>
+
+    <br>
+
+    <!-- Email link -->
+    <a href="mailto:test@fake.com">
+        Mail me
+    </a>
+
+    <br>
+
+    <!-- Image -->
+    <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/048/775/730/small/cute-shih-tzu-dog-in-pink-sweatshirt-and-sunglasses-on-pastel-background-photo.jpg"
+        alt="This is a picture of a dog"
+        height="200"
+    >
+
+    <br><br>
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <!-- Div -->
+    <div class="box">
+        <h2>Hello</h2>
+        <p>This is inside the box.</p>
+    </div>
+
+    <!-- Span -->
+    <p>
+        Lorem ipsum dolor
+        <span>sit amet consectetur adipisicing elit. Nesciunt</span>
+        laboriosam omnis, quia sint, dolorem molestias tenetur officiis
+        alias qui praesentium accusantium deserunt voluptas!
+        Perferendis, iusto dignissimos. Tempora, exercitationem.
+        Hic, dignissimos.
+    </p>
+
+    <!-- Unordered List -->
+    <ul>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol>
+        <li>Milk</li>
+        <li>Tea</li>
+        <li>Coffee</li>
+    </ol>
+
+    <!-- Description List -->
+    <dl>
+
+        <dt>Dragon</dt>
+        <dd>
+            Dragons are legendary, serpent-like reptilian creatures
+            featured in the mythologies, folklore, and cultural history
+            of societies around the world.
+        </dd>
+
+        <dt>Phoenix</dt>
+        <dd>
+            A phoenix is a legendary, immortal bird from ancient mythology
+            that burns into fire and is born again from its ashes.
+        </dd>
+
+        <dt>Werewolf</dt>
+        <dd>
+            A werewolf is a legendary creature that is a human being by day
+            and changes into a wolf or a half-wolf monster at night.
+        </dd>
+
+    </dl>
+
+    <br>
+
+    <!-- Table -->
+    <table border="1">
+
+        <tr style="background-color: lightblue;">
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+
+        <tr style="background-color: lightgreen;">
+            <td>Open</td>
+            <td>Open</td>
+            <td>Open</td>
+            <td>Open</td>
+            <td>Open</td>
+            <td>Open</td>
+            <td>Open</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <hr>
+
+    <!-- Form -->
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="6"
+            maxlength="15"
+            required
+            placeholder="ENTER YOUR NAME"
+        >
+
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <br>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="Male"
+        >
+
+        <label for="male">Male</label>
+
+        <br>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="Female"
+        >
+
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <!-- Birth Date -->
+        <label for="bday">Birth Date:</label>
+
+        <input
+            type="date"
+            id="bday"
+            name="birthdate"
+        >
+
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+        >
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+
+        <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="5"
+            maxlength="8"
+            placeholder="5-8 characters"
+        >
+
+        <br><br>
+
+        <!-- Contact Number -->
+        <label for="phone">Contact No.:</label>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your number"
+        >
+
+        <br><br>
+
+        <!-- Payment -->
+        <label for="payment">Payment:</label>
+
+        <select id="payment" name="payment">
+
+            <option value="visa">Visa</option>
+            <option value="gpay">GPay</option>
+            <option value="phonepe">PhonePe</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Comment -->
+        <label for="comment">Comment:</label>
+
+        <br>
+
+        <textarea
+            id="comment"
+            name="comment"
+            rows="3"
+            cols="25"
+            placeholder="Enter your comment"
+        ></textarea>
+
+        <br><br>
+
+        <!-- File -->
+        <label for="file">File:</label>
+
+        <input
+            type="file"
+            id="file"
+            name="file"
+            accept="image/png, image/jpeg"
+        >
+
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="reset">Reset</button>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
